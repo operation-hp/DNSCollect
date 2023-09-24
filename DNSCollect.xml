@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.4" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Date>2023-09-02T12:57:00.5904897</Date>
+    <Author>AzureAD\DNSCollect</Author>
+    <URI>\DNSCollect-v3</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <EventTrigger>
+      <Enabled>true</Enabled>
+      <Subscription>&lt;QueryList&gt;&lt;Query Id="0" Path="Security"&gt;&lt;Select Path="Security"&gt;*[System[(EventID=2003 or EventID=4625  or EventID=4697 or  EventID=1102 or EventID=4722  or EventID=4723  or EventID=4728  or EventID=4732   or EventID=4771 or EventID=4740 or EventID=4767  or EventID=4724)]]&lt;/Select&gt;&lt;Select Path="System"&gt;*[System[(EventID=2003 or EventID=4625 or EventID=1102 or EventID=4724)]]&lt;/Select&gt;&lt;/Query&gt;&lt;/QueryList&gt;</Subscription>
+      <ValueQueries>
+        <Value name="EID">Event/System/EventID</Value>
+        <Value name="EPCname">Event/System/Computer</Value>
+        <Value name="EventData">Event/EventData/Data</Value>
+      </ValueQueries>
+    </EventTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id="Author">
+      <UserId>S-1-5-21-2356822193-2757753685-209085513-1001</UserId>
+      <LogonType>S4U</LogonType>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>true</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+    <RestartOnFailure>
+      <Interval>PT1M</Interval>
+      <Count>2</Count>
+    </RestartOnFailure>
+  </Settings>
+  <Actions Context="Author">
+    <Exec>
+      <Command>C:\USER_Defined\DNSCollect\cmdping.bat</Command>
+      <Arguments>$(EID) $(EPCname) $(EventData)</Arguments>
+    </Exec>
+  </Actions>
+</Task>
