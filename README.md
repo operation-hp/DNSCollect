@@ -12,6 +12,7 @@ When a high risk event happens, Windows Event Log trigger a ping command with th
 
 It is still in beta and will benefit from real-world testing. If you're in the cybersecurity realm or just curious, we'd appreciate it if you could take DNSCollect for a spin. Your feedback can be invaluable in refining and enhancing this tool for the community.
 
+Installation of DNSCollect in Task Scheduler
 
 
 
