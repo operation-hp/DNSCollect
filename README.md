@@ -21,18 +21,26 @@ It is still in beta and will benefit from real-world testing. If you're in cyber
 - Go to "Actions" and choose the cmd.bat file
 - Finished
 
-https://github.com/operation-hp/DNSCollect/assets/132428527/d645ab2d-fc01-4ee2-bc58-8062d0bd4d4f
+
+https://github.com/operation-hp/DNSCollect/assets/132428527/005239ee-6590-40b6-bb45-2c8f8ad5e1c5
+
+
+
 
 ## Case Demo 
 ### Login Failed Monitoring (EventID 4625)
 When someone tries to log in to your device but fails, the task schedule will start the event and send a record to Our DNS Server.
 
-https://github.com/operation-hp/DNSCollect/assets/132428527/76b0ee47-875b-43b6-8480-9e8153a610bd
+
+https://github.com/operation-hp/DNSCollect/assets/132428527/a67a1e36-7cb4-46dc-94c8-4c8d77f91c57
+
 
 ### Change of Account setting Monitoring (EventID 4732)
 Changing the setting of any account will trigger our events and send a record to Our DNS Server. If you do not have any memory for those changes, please pay attention to your device to see if it has been accessed unauthorizedly.
 
-https://github.com/operation-hp/DNSCollect/assets/132428527/22fff6bb-500b-4822-b2f0-47911c42be69
+
+
+https://github.com/operation-hp/DNSCollect/assets/132428527/3638044d-6486-4b7a-9200-b2f9985a70a0
 
 
 
