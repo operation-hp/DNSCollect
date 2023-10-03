@@ -22,8 +22,7 @@ It is still in beta and will benefit from real-world testing. If you're in cyber
 - Finished
 
 
-https://github.com/operation-hp/DNSCollect/assets/132428527/005239ee-6590-40b6-bb45-2c8f8ad5e1c5
-
+https://github.com/operation-hp/DNSCollect/assets/132428527/ab2e04ea-41fb-462a-8e47-2e3df0d85f2b
 
 
 
@@ -32,15 +31,14 @@ https://github.com/operation-hp/DNSCollect/assets/132428527/005239ee-6590-40b6-b
 When someone tries to log in to your device but fails, the task schedule will start the event and send a record to Our DNS Server.
 
 
-https://github.com/operation-hp/DNSCollect/assets/132428527/a67a1e36-7cb4-46dc-94c8-4c8d77f91c57
+https://github.com/operation-hp/DNSCollect/assets/132428527/dcbb0b9e-aa48-4ceb-8ffc-ee918aa9b325
 
 
 ### Change of Account setting Monitoring (EventID 4732)
 Changing the setting of any account will trigger our events and send a record to Our DNS Server. If you do not have any memory for those changes, please pay attention to your device to see if it has been accessed unauthorizedly.
 
 
-
-https://github.com/operation-hp/DNSCollect/assets/132428527/3638044d-6486-4b7a-9200-b2f9985a70a0
+https://github.com/operation-hp/DNSCollect/assets/132428527/0b052aa3-db9d-49b4-b3f2-e55e8007f1f3
 
 
 
