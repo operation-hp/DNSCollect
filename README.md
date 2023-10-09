@@ -3,6 +3,7 @@
 # [中文版](#為什麼選擇-dnscollect)
 
 
+
 # DNSCollect is an agent-less tool crafted explicitly for remote Windows 10 event log collection.
 
 ## Why DNSCollect? 
@@ -45,6 +46,19 @@ Changing the setting of any account will trigger our events and send a record to
 
 https://github.com/operation-hp/DNSCollect/assets/132428527/0b052aa3-db9d-49b4-b3f2-e55e8007f1f3
 
+## FAQ
+## How can I open Task Scheduler in Windows?
+- You can use the "Search" function and type "Task Scheduler"
+- You can also press "Windows + R" to open the Run window and type this command "taskschd.msc"
+
+## What is an EventID, and why is it important in DNSCollect?
+- An EventID is a unique identifier assigned to specific events in the Windows Event Log. It's important in DNSCollect because certain EventIDs trigger actions and alerts within the tool.
+
+## Can I customize DNSCollect to respond to different EventIDs?
+- DNSCollect allows some degree of customization to specify actions for specific EventIDs. You can configure it to react differently based on your monitoring needs.
+
+## How can I troubleshoot issues related to EventID monitoring with DNSCollect?
+- If you encounter problems with DNSCollect's EventID monitoring, consult the tool's documentation or community support resources for troubleshooting guidance.
 
 
 DNSCollect is sponsored by AP Lens (Whitelist DNS Firewall with Web Proxy)
@@ -94,7 +108,19 @@ https://github.com/operation-hp/DNSCollect/assets/132428527/dcbb0b9e-aa48-4ceb-8
 
 https://github.com/operation-hp/DNSCollect/assets/132428527/0b052aa3-db9d-49b4-b3f2-e55e8007f1f3
 
+## 常見問題
+## 什麼是事件ID，以及在DNSCollect中為什麼如此重要？
+- 事件ID是分配給Windows事件日誌中特定事件的唯一標識符。在DNSCollect中，某些事件ID會觸發工具內的操作和警報，因此具有重要性。
 
+## 我可以自定義DNSCollect以對不同的事件ID做出回應嗎？
+- DNSCollect允許在某種程度上自定義，以指定對特定事件ID做出回應的操作。您可以根據您的監控需求配置它，使其根據需要以不同方式作出反應。
+
+## 如何解決與DNSCollect事件ID監控相關的問題？
+- 如果您在使用DNSCollect的事件ID監控過程中遇到問題，請參考工具的文檔或社區支援資源，以獲得故障排除指南。
+
+## 如何在Windows中打開Task Scheduler？
+- 您可以使用"搜尋"功能，然後輸入"Task Scheduler"。
+- 您也可以按下"Windows + R"來打開執行視窗，然後輸入這個命令"taskschd.msc"。
 
 DNSCollect 得到 AP Lens 的贊助（白名單DNS防火墻與Web代理）。
 
